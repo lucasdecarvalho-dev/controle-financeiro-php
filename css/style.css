@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    margin: 0 0 30px 0;
+}
+
+.controle-financeiro {
+    margin-bottom: 30px;
+}
+
+.controle-financeiro h1 {
+    margin-bottom: 20px;
+}
+
+.cards-financeiro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-financeiro {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-financeiro .titulo {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.card-financeiro .valor {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-entrada .valor {
+    color: green;
+}
+
+.card-despesa .valor {
+    color: red;
+}
+
+.saldo-positivo {
+    color: green;
+}
+
+.saldo-negativo {
+    color: red;
+}
+
+.saldo-zero {
+    color: #222;
+}
+
+@media (max-width: 700px) {
+    .cards-financeiro {
+        grid-template-columns: 1fr;
+    }
+}
+
+.btn-cadastrar {
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+
+.btn-cadastrar:hover {
+    background-color: #444;
+}
+
+.mensagem-sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tabela-container {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.entrada {
+    color: green;
+    font-weight: bold;
+}
+
+.saida {
+    color: red;
+    font-weight: bold;
+}
+
+.titulo-movimentacoes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulo-movimentacoes h1 {
+    margin: 0;
+}
+
+.titulo-movimentacoes select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.acoes {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.btn-editar,
+.btn-excluir {
+    padding: 7px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-editar {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.btn-editar:hover {
+    background-color: #ddd;
+}
+
+.btn-excluir {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-excluir:hover {
+    background-color: #c82333;
+}
+
+.coluna-acoes {
+    width: 150px;
+}
+
+.valor {
+    font-weight: bold;
+    text-align: right;
+    white-space: nowrap;
+}
